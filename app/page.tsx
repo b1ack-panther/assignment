@@ -46,7 +46,7 @@ const dummyPosts: Post[] = [
 	{
 		id: "1",
 		image:
-			"https://images.stockcake.com/public/1/7/e/17e3d856-fa51-4727-99d2-1a292ec89765_large/futuristic-technology-portrait-stockcake.jpg",
+			"13.webp",
 		username: "techguru",
 		caption: "Amazing new tech trends! 🚀 #technology #innovation",
 		likes: 1234,
@@ -55,7 +55,7 @@ const dummyPosts: Post[] = [
 	{
 		id: "2",
 		image:
-			"https://images.stockcake.com/public/9/6/7/967020b9-0db9-41b5-96f3-6024d93bbc41_large/silhouetted-tree-arch-stockcake.jpg",
+			"14.webp",
 		username: "wanderlust",
 		caption: "Beautiful sunset from my travels ✈️ #travel #sunset",
 		likes: 2156,
@@ -64,7 +64,7 @@ const dummyPosts: Post[] = [
 	{
 		id: "3",
 		image:
-			"https://images.stockcake.com/public/5/c/6/5c651eb1-e870-4f5f-9f00-b22c35b73ef5_large/nature-human-connection-stockcake.jpg",
+			"15.webp",
 		username: "foodie_life",
 		caption: "Delicious homemade pasta 🍝 #food #cooking",
 		likes: 987,
@@ -73,7 +73,7 @@ const dummyPosts: Post[] = [
 	{
 		id: "4",
 		image:
-			"https://images.stockcake.com/public/d/e/d/ded45393-e812-49a1-a9bc-1535828864a4_large/futuristic-facial-recognition-stockcake.jpg",
+			"12.webp",
 		username: "fitnessmotiv",
 		caption: "Morning workout complete! 💪 #fitness #motivation",
 		likes: 1876,
@@ -207,7 +207,7 @@ export default function InstagramAutomationFlow() {
 											onClick={() => handlePostSelect(post)}
 										>
 											<Image
-												src={post.image || "/placeholder.svg"}
+												src={`/${post.image}` || "/placeholder.svg"}
 												alt={`Post by ${post.username}`}
 												width={80}
 												height={80}
